@@ -1,0 +1,17 @@
+<p><a href="{{curso.slug}}">{{ curso }}</a></p>
+
+
+<a href="{{curso.slug}}">{{curso.slug}}</a>
+
+<form  method="post">
+{% csrf_token %}
+    {% for field in form %}
+
+<div>{{field.label_tag}}</div>
+<div>{{field}}</div>
+<div>{{field.errors}} </div>
+{% endfor %}
+
+<button type="submit">Enviar</button>
+
+</form>

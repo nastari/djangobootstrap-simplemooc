@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Bem-Vindo! </h1>
+
+<p>Crie sua Conta Agora Mesmo!</p>
+
+<h3>Veja os Cursos !</h3>
+<h5>Lançamentos</h5>
+
+<div class='container'>
+{% for courses in last_courses %}
+
+    <div class="card" style="width: 18rem; display: inline-block;">
+        <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title">{{courses.title}}</h5>
+          <p class="card-text">{{ courses.description }}</p>
+          <a href="#" class="btn btn-primary">Acessar</a>
+        </div>
+      </div>
+
+{% endfor %}
+</div>
+
+
+<h5>Mais seguidos!</h5>
+<div class='container'>
+
+
+{% for courses in most_follows %}
+
+<div class="card" style="width: 18rem; display: inline-block;">
+    <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
+    <div class="card-body">
+      <h5 class="card-title">{{courses.title}}</h5>
+      <p class="card-text">{{ courses.description }}</p>
+      <a href="#" class="btn btn-primary">Acessar</a>
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+
+{% endblock %}

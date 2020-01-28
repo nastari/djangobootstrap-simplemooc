@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class='bordertop'></div>
+<div class='container'>
+<h1>Cursos</h1>
+</div>
+<div class='container'>
+
+    {% for course in courses %}
+    
+        <div class="card" style="width: 18rem; display: inline-block;">
+            <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
+            <div class="card-body">
+              <h5 class="card-title">{{course.title}}</h5>
+              <p class="card-text">{{ course.description }}</p>
+              <a href="#" class="btn btn-primary">Acessar</a>
+            </div>
+          </div>
+
+          
+    {% endfor %}
+</div>
+
+{% endblock %}
