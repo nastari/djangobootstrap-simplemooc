@@ -4,4 +4,4 @@ Criação de uma aplicação web com django no desenvolvimento de um site com co
 
 ![alt text](https://github.com/nastari/djangobootstrap-simplemooc/blob/master/simplemooc/media/courses/images/beta-template.png)
 
-[ beta-do-beta-do-beta ]
+[view beta funcionalidade most-follows recent-adds ] 
